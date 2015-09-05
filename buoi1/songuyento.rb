@@ -1,15 +1,17 @@
-number = 7
+print "Nhap so can kiem tra:"
+number = gets
+number=number.to_i
 i=2
 kt=0
-while i<7
-	t=7%i
+while i<number
+	t=number%i
 	if t==0
 		kt=1
 	end
 	i+=1
 end
 if kt==1
-	puts 'Khong phai la so nguyent to'
+	puts "\n\n\n#{number} khong phai la so nguyen to.\n\n\n"
 else
-	puts 'La so nguyen to'
+	puts "\n\n\n#{number} la so nguyen to.\n\n\n"
 end
